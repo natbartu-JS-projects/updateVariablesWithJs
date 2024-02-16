@@ -4,6 +4,9 @@
   --light:#f5f5f5;
   --dark: #323537;
   --font: "Share Tech", sans-serif;
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
 }
 
 * {
@@ -30,6 +33,13 @@ input {
 }
 
 #mainImg {
-  width: 50%;
-  height: 50%;
+  padding: var(--base);
+  background: var(--base);
+  filter: blur(--blur);
+  width: 70%;
+  height: 60%;
+}
+
+.hl {
+  color: var(--base);
 }
